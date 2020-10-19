@@ -4,13 +4,15 @@ using UnityEngine;
 
 public class CubeSpawn : MonoBehaviour
 {
-    public GameObject cube;
+    public GameObject[] cube;
     public Transform spawnPoint;
+    public float timeToBegin;
+    public float timeBetween;
 
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating ("Spawn", 3.0f, 3.0f);
+        InvokeRepeating ("Spawn", timeToBegin, timeBetween);
     }
 
     // Update is called once per frame
@@ -21,6 +23,7 @@ public class CubeSpawn : MonoBehaviour
 
     void Spawn()
     {
-        Instantiate(cube, spawnPoint.position, spawnPoint.rotation);
+        int cubeIndex = Random.Range (0, cube.Length);
+        Instantiate(cube[cubeIndex], spawnPoint.position, spawnPoint.rotation);
     }
 }
