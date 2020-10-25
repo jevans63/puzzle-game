@@ -15,12 +15,6 @@ public class CubeSpawn : MonoBehaviour
         InvokeRepeating ("Spawn", timeToBegin, timeBetween);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     void Spawn()
     {
         int cubeIndex = Random.Range (0, cube.Length);

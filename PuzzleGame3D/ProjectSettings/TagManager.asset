@@ -3,7 +3,15 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Red
+  - Green
+  - Blue
+  - Block1
+  - Block2
+  - Block3
+  - Block4
+  - Block5
   layers:
   - Default
   - TransparentFX

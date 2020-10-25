@@ -478,4 +478,4 @@ ScriptsOnlyBuild:
   platform: 5
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: C:/Users/Josh/Desktop/Project1_Build/PuzzleGame3D.exe
+  playerPath: C:/Users/Josh/Desktop/ProjectPlan1_Build/PuzzleGame3D.exe
