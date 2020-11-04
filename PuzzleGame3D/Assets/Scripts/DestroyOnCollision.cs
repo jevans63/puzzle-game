@@ -51,6 +51,14 @@ public class DestroyOnCollision : MonoBehaviour
         } 
     }
 
+        void OnCollisionEnter(Collision col)
+    {
+        if (col.gameObject.CompareTag(color))
+        {
+            Destroy(col.gameObject);
+        } 
+    }
+
     void swapColor()
     {
         if (color == "Red")
