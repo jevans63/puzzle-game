@@ -5,10 +5,10 @@ using UnityEngine;
 public class DestroyOnClick : MonoBehaviour
 {
     //public GameObject block;
-    void OnMouseDown()
-    {
-        Destroy(gameObject);
-    }
+    // void OnMouseDown()
+    // {
+    //     Destroy(gameObject);
+    // }
 
     void Update()
     {

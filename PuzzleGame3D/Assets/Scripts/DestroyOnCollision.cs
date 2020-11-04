@@ -6,7 +6,7 @@ public class DestroyOnCollision : MonoBehaviour
 {
     public Material red, green, blue;
     public GameObject floor;
-    string color = "Red";
+    string color = "Blue";
     // Start is called before the first frame update
     void Start()
     {
