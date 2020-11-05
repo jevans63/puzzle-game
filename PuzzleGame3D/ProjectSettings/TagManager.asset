@@ -12,6 +12,9 @@ TagManager:
   - Block3
   - Block4
   - Block5
+  - Red Dark
+  - Green Dark
+  - Blue Dark
   layers:
   - Default
   - TransparentFX

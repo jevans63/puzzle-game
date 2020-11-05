@@ -8,8 +8,7 @@ public class CubeSpawn : MonoBehaviour
     public Transform spawnPoint;
     public float timeToBegin;
     public float timeBetween;
-
-    // Start is called before the first frame update
+    
     void Start()
     {
         InvokeRepeating ("Spawn", timeToBegin, timeBetween);

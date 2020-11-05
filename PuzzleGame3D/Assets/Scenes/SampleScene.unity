@@ -138,7 +138,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1328463
 RectTransform:
   m_ObjectHideFlags: 0
@@ -419,6 +419,18 @@ MonoBehaviour:
   green: {fileID: 2100000, guid: a8648b96740e59949abe409140204e59, type: 2}
   blue: {fileID: 2100000, guid: 95a636ce88ce06148b29fac1f87be706, type: 2}
   floor: {fileID: 159087088}
+  cube:
+  - {fileID: 4050670301940473976, guid: 5b8f08ac66f9b1e4fa30fc11d7d3ac95, type: 3}
+  - {fileID: 4050670301940473976, guid: 1e6a531237715244a9037bfff195589c, type: 3}
+  - {fileID: 4050670301940473976, guid: 56a71998b3d990b49a100c5cee7a82e4, type: 3}
+  spawnPoint:
+  - {fileID: 1196761648}
+  - {fileID: 604577455}
+  - {fileID: 524388086}
+  - {fileID: 1683520542}
+  - {fileID: 1421946624}
+  timeToBegin: 0
+  timeBetween: 0.5
 --- !u!54 &159087094
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -738,7 +750,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &336677794
 RectTransform:
   m_ObjectHideFlags: 0
@@ -900,7 +912,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 524388082}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 47a81873377c1c848962833676dea4aa, type: 3}
   m_Name: 
@@ -911,7 +923,7 @@ MonoBehaviour:
   - {fileID: 4050670301940473976, guid: 56a71998b3d990b49a100c5cee7a82e4, type: 3}
   spawnPoint: {fileID: 524388086}
   timeToBegin: 1
-  timeBetween: 3
+  timeBetween: 0
 --- !u!1 &604577450
 GameObject:
   m_ObjectHideFlags: 0
@@ -939,7 +951,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 604577450}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 47a81873377c1c848962833676dea4aa, type: 3}
   m_Name: 
@@ -949,8 +961,8 @@ MonoBehaviour:
   - {fileID: 4050670301940473976, guid: 1e6a531237715244a9037bfff195589c, type: 3}
   - {fileID: 4050670301940473976, guid: 56a71998b3d990b49a100c5cee7a82e4, type: 3}
   spawnPoint: {fileID: 604577455}
-  timeToBegin: 3
-  timeBetween: 1
+  timeToBegin: 1
+  timeBetween: 0
 --- !u!65 &604577452
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1570,7 +1582,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1124561318
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1648,7 +1660,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1172051747
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1736,7 +1748,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1196761643}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 47a81873377c1c848962833676dea4aa, type: 3}
   m_Name: 
@@ -1746,8 +1758,8 @@ MonoBehaviour:
   - {fileID: 4050670301940473976, guid: 1e6a531237715244a9037bfff195589c, type: 3}
   - {fileID: 4050670301940473976, guid: 56a71998b3d990b49a100c5cee7a82e4, type: 3}
   spawnPoint: {fileID: 1196761648}
-  timeToBegin: 4
-  timeBetween: 2
+  timeToBegin: 1
+  timeBetween: 0
 --- !u!65 &1196761645
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2034,6 +2046,18 @@ MonoBehaviour:
   green: {fileID: 2100000, guid: a8648b96740e59949abe409140204e59, type: 2}
   blue: {fileID: 2100000, guid: 95a636ce88ce06148b29fac1f87be706, type: 2}
   floor: {fileID: 1347352500}
+  cube:
+  - {fileID: 4050670301940473976, guid: 5b8f08ac66f9b1e4fa30fc11d7d3ac95, type: 3}
+  - {fileID: 4050670301940473976, guid: 1e6a531237715244a9037bfff195589c, type: 3}
+  - {fileID: 4050670301940473976, guid: 56a71998b3d990b49a100c5cee7a82e4, type: 3}
+  spawnPoint:
+  - {fileID: 1196761648}
+  - {fileID: 604577455}
+  - {fileID: 524388086}
+  - {fileID: 1683520542}
+  - {fileID: 1421946624}
+  timeToBegin: 0
+  timeBetween: 0
 --- !u!65 &1347352502
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2257,7 +2281,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1421946619}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 47a81873377c1c848962833676dea4aa, type: 3}
   m_Name: 
@@ -2268,7 +2292,7 @@ MonoBehaviour:
   - {fileID: 4050670301940473976, guid: 56a71998b3d990b49a100c5cee7a82e4, type: 3}
   spawnPoint: {fileID: 1421946624}
   timeToBegin: 1
-  timeBetween: 3
+  timeBetween: 0
 --- !u!65 &1421946621
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2360,7 +2384,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1495322283
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2448,7 +2472,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1683520537}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 47a81873377c1c848962833676dea4aa, type: 3}
   m_Name: 
@@ -2458,8 +2482,8 @@ MonoBehaviour:
   - {fileID: 4050670301940473976, guid: 1e6a531237715244a9037bfff195589c, type: 3}
   - {fileID: 4050670301940473976, guid: 56a71998b3d990b49a100c5cee7a82e4, type: 3}
   spawnPoint: {fileID: 1683520542}
-  timeToBegin: 2
-  timeBetween: 2
+  timeToBegin: 1
+  timeBetween: 0
 --- !u!65 &1683520539
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2571,6 +2595,18 @@ MonoBehaviour:
   green: {fileID: 2100000, guid: a8648b96740e59949abe409140204e59, type: 2}
   blue: {fileID: 2100000, guid: 95a636ce88ce06148b29fac1f87be706, type: 2}
   floor: {fileID: 2020881361}
+  cube:
+  - {fileID: 4050670301940473976, guid: 5b8f08ac66f9b1e4fa30fc11d7d3ac95, type: 3}
+  - {fileID: 4050670301940473976, guid: 1e6a531237715244a9037bfff195589c, type: 3}
+  - {fileID: 4050670301940473976, guid: 56a71998b3d990b49a100c5cee7a82e4, type: 3}
+  spawnPoint:
+  - {fileID: 1196761648}
+  - {fileID: 604577455}
+  - {fileID: 524388086}
+  - {fileID: 1683520542}
+  - {fileID: 1421946624}
+  timeToBegin: 0
+  timeBetween: 0
 --- !u!65 &2020881363
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2698,6 +2734,18 @@ MonoBehaviour:
   green: {fileID: 2100000, guid: a8648b96740e59949abe409140204e59, type: 2}
   blue: {fileID: 2100000, guid: 95a636ce88ce06148b29fac1f87be706, type: 2}
   floor: {fileID: 2080627986}
+  cube:
+  - {fileID: 4050670301940473976, guid: 5b8f08ac66f9b1e4fa30fc11d7d3ac95, type: 3}
+  - {fileID: 4050670301940473976, guid: 1e6a531237715244a9037bfff195589c, type: 3}
+  - {fileID: 4050670301940473976, guid: 56a71998b3d990b49a100c5cee7a82e4, type: 3}
+  spawnPoint:
+  - {fileID: 1196761648}
+  - {fileID: 604577455}
+  - {fileID: 524388086}
+  - {fileID: 1683520542}
+  - {fileID: 1421946624}
+  timeToBegin: 0
+  timeBetween: 0
 --- !u!65 &2080627988
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2825,6 +2873,18 @@ MonoBehaviour:
   green: {fileID: 2100000, guid: a8648b96740e59949abe409140204e59, type: 2}
   blue: {fileID: 2100000, guid: 95a636ce88ce06148b29fac1f87be706, type: 2}
   floor: {fileID: 2137035106}
+  cube:
+  - {fileID: 4050670301940473976, guid: 5b8f08ac66f9b1e4fa30fc11d7d3ac95, type: 3}
+  - {fileID: 4050670301940473976, guid: 1e6a531237715244a9037bfff195589c, type: 3}
+  - {fileID: 4050670301940473976, guid: 56a71998b3d990b49a100c5cee7a82e4, type: 3}
+  spawnPoint:
+  - {fileID: 1196761648}
+  - {fileID: 604577455}
+  - {fileID: 524388086}
+  - {fileID: 1683520542}
+  - {fileID: 1421946624}
+  timeToBegin: 0
+  timeBetween: 0
 --- !u!65 &2137035108
 BoxCollider:
   m_ObjectHideFlags: 0
