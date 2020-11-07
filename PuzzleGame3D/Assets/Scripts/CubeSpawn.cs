@@ -5,7 +5,7 @@ using UnityEngine;
 public class CubeSpawn : MonoBehaviour
 {
     public GameObject[] cube;
-    public Transform spawnPoint;
+    public Transform[] spawnPoint;
     public float timeToBegin;
     public float timeBetween;
     
@@ -17,6 +17,7 @@ public class CubeSpawn : MonoBehaviour
     void Spawn()
     {
         int cubeIndex = Random.Range (0, cube.Length);
-        Instantiate(cube[cubeIndex], spawnPoint.position, spawnPoint.rotation);
+        int spawnIndex = Random.Range (0, spawnPoint.Length);
+        Instantiate(cube[cubeIndex], spawnPoint[spawnIndex].position, spawnPoint[spawnIndex].rotation);
     }
 }

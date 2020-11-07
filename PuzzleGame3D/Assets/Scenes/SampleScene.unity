@@ -320,8 +320,8 @@ GameObject:
   - component: {fileID: 159087091}
   - component: {fileID: 159087090}
   - component: {fileID: 159087089}
-  - component: {fileID: 159087093}
   - component: {fileID: 159087094}
+  - component: {fileID: 159087093}
   m_Layer: 0
   m_Name: Cube Catch 1
   m_TagString: Block1
@@ -412,25 +412,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 159087088}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c5409ffe46259e4ab1580f4d2a27dee, type: 3}
+  m_Script: {fileID: 11500000, guid: de6b24ead1c365a49892bdf6d40e409d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   red: {fileID: 2100000, guid: 4d13302812681ab45a95439a45e36c6c, type: 2}
   green: {fileID: 2100000, guid: a8648b96740e59949abe409140204e59, type: 2}
   blue: {fileID: 2100000, guid: 95a636ce88ce06148b29fac1f87be706, type: 2}
   floor: {fileID: 159087088}
-  cube:
-  - {fileID: 4050670301940473976, guid: 5b8f08ac66f9b1e4fa30fc11d7d3ac95, type: 3}
-  - {fileID: 4050670301940473976, guid: 1e6a531237715244a9037bfff195589c, type: 3}
-  - {fileID: 4050670301940473976, guid: 56a71998b3d990b49a100c5cee7a82e4, type: 3}
-  spawnPoint:
-  - {fileID: 1196761648}
-  - {fileID: 604577455}
-  - {fileID: 524388086}
-  - {fileID: 1683520542}
-  - {fileID: 1421946624}
-  timeToBegin: 0
-  timeBetween: 0.5
 --- !u!54 &159087094
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -823,7 +811,6 @@ GameObject:
   - component: {fileID: 524388085}
   - component: {fileID: 524388084}
   - component: {fileID: 524388083}
-  - component: {fileID: 524388087}
   m_Layer: 0
   m_Name: CubeSpawn 3
   m_TagString: Untagged
@@ -905,25 +892,6 @@ Transform:
   m_Father: {fileID: 1331618427}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &524388087
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 524388082}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47a81873377c1c848962833676dea4aa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cube:
-  - {fileID: 4050670301940473976, guid: 5b8f08ac66f9b1e4fa30fc11d7d3ac95, type: 3}
-  - {fileID: 4050670301940473976, guid: 1e6a531237715244a9037bfff195589c, type: 3}
-  - {fileID: 4050670301940473976, guid: 56a71998b3d990b49a100c5cee7a82e4, type: 3}
-  spawnPoint: {fileID: 524388086}
-  timeToBegin: 1
-  timeBetween: 0
 --- !u!1 &604577450
 GameObject:
   m_ObjectHideFlags: 0
@@ -936,7 +904,6 @@ GameObject:
   - component: {fileID: 604577454}
   - component: {fileID: 604577453}
   - component: {fileID: 604577452}
-  - component: {fileID: 604577451}
   m_Layer: 0
   m_Name: CubeSpawn 2
   m_TagString: Untagged
@@ -944,25 +911,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &604577451
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 604577450}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47a81873377c1c848962833676dea4aa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cube:
-  - {fileID: 4050670301940473976, guid: 5b8f08ac66f9b1e4fa30fc11d7d3ac95, type: 3}
-  - {fileID: 4050670301940473976, guid: 1e6a531237715244a9037bfff195589c, type: 3}
-  - {fileID: 4050670301940473976, guid: 56a71998b3d990b49a100c5cee7a82e4, type: 3}
-  spawnPoint: {fileID: 604577455}
-  timeToBegin: 1
-  timeBetween: 0
 --- !u!65 &604577452
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1733,7 +1681,6 @@ GameObject:
   - component: {fileID: 1196761647}
   - component: {fileID: 1196761646}
   - component: {fileID: 1196761645}
-  - component: {fileID: 1196761644}
   m_Layer: 0
   m_Name: CubeSpawn 1
   m_TagString: Untagged
@@ -1741,25 +1688,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1196761644
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1196761643}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47a81873377c1c848962833676dea4aa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cube:
-  - {fileID: 4050670301940473976, guid: 5b8f08ac66f9b1e4fa30fc11d7d3ac95, type: 3}
-  - {fileID: 4050670301940473976, guid: 1e6a531237715244a9037bfff195589c, type: 3}
-  - {fileID: 4050670301940473976, guid: 56a71998b3d990b49a100c5cee7a82e4, type: 3}
-  spawnPoint: {fileID: 1196761648}
-  timeToBegin: 1
-  timeBetween: 0
 --- !u!65 &1196761645
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1983,8 +1911,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1331618427}
+  - component: {fileID: 1331618428}
   m_Layer: 0
-  m_Name: Cube Spawners
+  m_Name: Cube Spawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2009,6 +1938,30 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1331618428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1331618426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47a81873377c1c848962833676dea4aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cube:
+  - {fileID: 4050670301940473976, guid: 5b8f08ac66f9b1e4fa30fc11d7d3ac95, type: 3}
+  - {fileID: 4050670301940473976, guid: 1e6a531237715244a9037bfff195589c, type: 3}
+  - {fileID: 4050670301940473976, guid: 56a71998b3d990b49a100c5cee7a82e4, type: 3}
+  spawnPoint:
+  - {fileID: 1196761648}
+  - {fileID: 604577455}
+  - {fileID: 524388086}
+  - {fileID: 1683520542}
+  - {fileID: 1421946624}
+  timeToBegin: 1
+  timeBetween: 1
 --- !u!1 &1347352500
 GameObject:
   m_ObjectHideFlags: 0
@@ -2021,8 +1974,8 @@ GameObject:
   - component: {fileID: 1347352504}
   - component: {fileID: 1347352503}
   - component: {fileID: 1347352502}
-  - component: {fileID: 1347352501}
   - component: {fileID: 1347352506}
+  - component: {fileID: 1347352501}
   m_Layer: 0
   m_Name: Cube Catch 2
   m_TagString: Block2
@@ -2039,25 +1992,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1347352500}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c5409ffe46259e4ab1580f4d2a27dee, type: 3}
+  m_Script: {fileID: 11500000, guid: de6b24ead1c365a49892bdf6d40e409d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   red: {fileID: 2100000, guid: 4d13302812681ab45a95439a45e36c6c, type: 2}
   green: {fileID: 2100000, guid: a8648b96740e59949abe409140204e59, type: 2}
   blue: {fileID: 2100000, guid: 95a636ce88ce06148b29fac1f87be706, type: 2}
   floor: {fileID: 1347352500}
-  cube:
-  - {fileID: 4050670301940473976, guid: 5b8f08ac66f9b1e4fa30fc11d7d3ac95, type: 3}
-  - {fileID: 4050670301940473976, guid: 1e6a531237715244a9037bfff195589c, type: 3}
-  - {fileID: 4050670301940473976, guid: 56a71998b3d990b49a100c5cee7a82e4, type: 3}
-  spawnPoint:
-  - {fileID: 1196761648}
-  - {fileID: 604577455}
-  - {fileID: 524388086}
-  - {fileID: 1683520542}
-  - {fileID: 1421946624}
-  timeToBegin: 0
-  timeBetween: 0
 --- !u!65 &1347352502
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2266,7 +2207,6 @@ GameObject:
   - component: {fileID: 1421946623}
   - component: {fileID: 1421946622}
   - component: {fileID: 1421946621}
-  - component: {fileID: 1421946620}
   m_Layer: 0
   m_Name: CubeSpawn 5
   m_TagString: Untagged
@@ -2274,25 +2214,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1421946620
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1421946619}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47a81873377c1c848962833676dea4aa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cube:
-  - {fileID: 4050670301940473976, guid: 5b8f08ac66f9b1e4fa30fc11d7d3ac95, type: 3}
-  - {fileID: 4050670301940473976, guid: 1e6a531237715244a9037bfff195589c, type: 3}
-  - {fileID: 4050670301940473976, guid: 56a71998b3d990b49a100c5cee7a82e4, type: 3}
-  spawnPoint: {fileID: 1421946624}
-  timeToBegin: 1
-  timeBetween: 0
 --- !u!65 &1421946621
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2457,7 +2378,6 @@ GameObject:
   - component: {fileID: 1683520541}
   - component: {fileID: 1683520540}
   - component: {fileID: 1683520539}
-  - component: {fileID: 1683520538}
   m_Layer: 0
   m_Name: CubeSpawn 4
   m_TagString: Untagged
@@ -2465,25 +2385,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1683520538
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1683520537}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47a81873377c1c848962833676dea4aa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cube:
-  - {fileID: 4050670301940473976, guid: 5b8f08ac66f9b1e4fa30fc11d7d3ac95, type: 3}
-  - {fileID: 4050670301940473976, guid: 1e6a531237715244a9037bfff195589c, type: 3}
-  - {fileID: 4050670301940473976, guid: 56a71998b3d990b49a100c5cee7a82e4, type: 3}
-  spawnPoint: {fileID: 1683520542}
-  timeToBegin: 1
-  timeBetween: 0
 --- !u!65 &1683520539
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2570,8 +2471,8 @@ GameObject:
   - component: {fileID: 2020881365}
   - component: {fileID: 2020881364}
   - component: {fileID: 2020881363}
-  - component: {fileID: 2020881362}
   - component: {fileID: 2020881367}
+  - component: {fileID: 2020881362}
   m_Layer: 0
   m_Name: Cube Catch 3
   m_TagString: Block3
@@ -2588,25 +2489,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 2020881361}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c5409ffe46259e4ab1580f4d2a27dee, type: 3}
+  m_Script: {fileID: 11500000, guid: de6b24ead1c365a49892bdf6d40e409d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   red: {fileID: 2100000, guid: 4d13302812681ab45a95439a45e36c6c, type: 2}
   green: {fileID: 2100000, guid: a8648b96740e59949abe409140204e59, type: 2}
   blue: {fileID: 2100000, guid: 95a636ce88ce06148b29fac1f87be706, type: 2}
   floor: {fileID: 2020881361}
-  cube:
-  - {fileID: 4050670301940473976, guid: 5b8f08ac66f9b1e4fa30fc11d7d3ac95, type: 3}
-  - {fileID: 4050670301940473976, guid: 1e6a531237715244a9037bfff195589c, type: 3}
-  - {fileID: 4050670301940473976, guid: 56a71998b3d990b49a100c5cee7a82e4, type: 3}
-  spawnPoint:
-  - {fileID: 1196761648}
-  - {fileID: 604577455}
-  - {fileID: 524388086}
-  - {fileID: 1683520542}
-  - {fileID: 1421946624}
-  timeToBegin: 0
-  timeBetween: 0
 --- !u!65 &2020881363
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2709,8 +2598,8 @@ GameObject:
   - component: {fileID: 2080627990}
   - component: {fileID: 2080627989}
   - component: {fileID: 2080627988}
-  - component: {fileID: 2080627987}
   - component: {fileID: 2080627992}
+  - component: {fileID: 2080627987}
   m_Layer: 0
   m_Name: Cube Catch 4
   m_TagString: Block4
@@ -2727,25 +2616,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 2080627986}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c5409ffe46259e4ab1580f4d2a27dee, type: 3}
+  m_Script: {fileID: 11500000, guid: de6b24ead1c365a49892bdf6d40e409d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   red: {fileID: 2100000, guid: 4d13302812681ab45a95439a45e36c6c, type: 2}
   green: {fileID: 2100000, guid: a8648b96740e59949abe409140204e59, type: 2}
   blue: {fileID: 2100000, guid: 95a636ce88ce06148b29fac1f87be706, type: 2}
   floor: {fileID: 2080627986}
-  cube:
-  - {fileID: 4050670301940473976, guid: 5b8f08ac66f9b1e4fa30fc11d7d3ac95, type: 3}
-  - {fileID: 4050670301940473976, guid: 1e6a531237715244a9037bfff195589c, type: 3}
-  - {fileID: 4050670301940473976, guid: 56a71998b3d990b49a100c5cee7a82e4, type: 3}
-  spawnPoint:
-  - {fileID: 1196761648}
-  - {fileID: 604577455}
-  - {fileID: 524388086}
-  - {fileID: 1683520542}
-  - {fileID: 1421946624}
-  timeToBegin: 0
-  timeBetween: 0
 --- !u!65 &2080627988
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2848,8 +2725,8 @@ GameObject:
   - component: {fileID: 2137035110}
   - component: {fileID: 2137035109}
   - component: {fileID: 2137035108}
-  - component: {fileID: 2137035107}
   - component: {fileID: 2137035112}
+  - component: {fileID: 2137035107}
   m_Layer: 0
   m_Name: Cube Catch 5
   m_TagString: Block5
@@ -2866,25 +2743,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 2137035106}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c5409ffe46259e4ab1580f4d2a27dee, type: 3}
+  m_Script: {fileID: 11500000, guid: de6b24ead1c365a49892bdf6d40e409d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   red: {fileID: 2100000, guid: 4d13302812681ab45a95439a45e36c6c, type: 2}
   green: {fileID: 2100000, guid: a8648b96740e59949abe409140204e59, type: 2}
   blue: {fileID: 2100000, guid: 95a636ce88ce06148b29fac1f87be706, type: 2}
   floor: {fileID: 2137035106}
-  cube:
-  - {fileID: 4050670301940473976, guid: 5b8f08ac66f9b1e4fa30fc11d7d3ac95, type: 3}
-  - {fileID: 4050670301940473976, guid: 1e6a531237715244a9037bfff195589c, type: 3}
-  - {fileID: 4050670301940473976, guid: 56a71998b3d990b49a100c5cee7a82e4, type: 3}
-  spawnPoint:
-  - {fileID: 1196761648}
-  - {fileID: 604577455}
-  - {fileID: 524388086}
-  - {fileID: 1683520542}
-  - {fileID: 1421946624}
-  timeToBegin: 0
-  timeBetween: 0
 --- !u!65 &2137035108
 BoxCollider:
   m_ObjectHideFlags: 0
