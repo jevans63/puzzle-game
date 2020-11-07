@@ -419,6 +419,8 @@ MonoBehaviour:
   green: {fileID: 2100000, guid: a8648b96740e59949abe409140204e59, type: 2}
   blue: {fileID: 2100000, guid: 95a636ce88ce06148b29fac1f87be706, type: 2}
   floor: {fileID: 159087088}
+  color: Blue
+  scoreController: {fileID: 1946210665}
 --- !u!54 &159087094
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -607,6 +609,7 @@ RectTransform:
   - {fileID: 199898897}
   - {fileID: 1324896940}
   - {fileID: 123154688}
+  - {fileID: 1946210662}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1960,8 +1963,8 @@ MonoBehaviour:
   - {fileID: 524388086}
   - {fileID: 1683520542}
   - {fileID: 1421946624}
-  timeToBegin: 1
-  timeBetween: 1
+  timeToBegin: 0.5
+  timeBetween: 0.5
 --- !u!1 &1347352500
 GameObject:
   m_ObjectHideFlags: 0
@@ -1999,6 +2002,8 @@ MonoBehaviour:
   green: {fileID: 2100000, guid: a8648b96740e59949abe409140204e59, type: 2}
   blue: {fileID: 2100000, guid: 95a636ce88ce06148b29fac1f87be706, type: 2}
   floor: {fileID: 1347352500}
+  color: Blue
+  scoreController: {fileID: 1946210665}
 --- !u!65 &1347352502
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2459,6 +2464,100 @@ Transform:
   m_Father: {fileID: 1331618427}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1946210661
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1946210662}
+  - component: {fileID: 1946210664}
+  - component: {fileID: 1946210663}
+  - component: {fileID: 1946210665}
+  m_Layer: 5
+  m_Name: Score
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1946210662
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1946210661}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 243287378}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 50, y: 250}
+  m_SizeDelta: {x: 300, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1946210663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1946210661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 28
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 
+--- !u!222 &1946210664
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1946210661}
+  m_CullTransparentMesh: 0
+--- !u!114 &1946210665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1946210661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d20ff847f0c8aa43a63902f7152ce36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreVal: 0
+  scoreText: 'Score: 0'
+  ScoreUI: {fileID: 1946210663}
 --- !u!1 &2020881361
 GameObject:
   m_ObjectHideFlags: 0
@@ -2496,6 +2595,8 @@ MonoBehaviour:
   green: {fileID: 2100000, guid: a8648b96740e59949abe409140204e59, type: 2}
   blue: {fileID: 2100000, guid: 95a636ce88ce06148b29fac1f87be706, type: 2}
   floor: {fileID: 2020881361}
+  color: Blue
+  scoreController: {fileID: 1946210665}
 --- !u!65 &2020881363
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2623,6 +2724,8 @@ MonoBehaviour:
   green: {fileID: 2100000, guid: a8648b96740e59949abe409140204e59, type: 2}
   blue: {fileID: 2100000, guid: 95a636ce88ce06148b29fac1f87be706, type: 2}
   floor: {fileID: 2080627986}
+  color: Blue
+  scoreController: {fileID: 1946210665}
 --- !u!65 &2080627988
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2750,6 +2853,8 @@ MonoBehaviour:
   green: {fileID: 2100000, guid: a8648b96740e59949abe409140204e59, type: 2}
   blue: {fileID: 2100000, guid: 95a636ce88ce06148b29fac1f87be706, type: 2}
   floor: {fileID: 2137035106}
+  color: Blue
+  scoreController: {fileID: 1946210665}
 --- !u!65 &2137035108
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -1,17 +1,25 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class CatcherController : MonoBehaviour
 {
     public Material red, green, blue;
     public GameObject floor;
-    string color = "Blue";
+    public string color = "Blue";
+    public ScoreController scoreController;
+
     //bool swapable = true; 
 
-    void OnMouseDown()
+    // void OnMouseDown()
+    // {
+    //     swapColorLeft();
+    // }
+
+    void OnMouseOver()
     {
-        swapColor();
+        if(Input.GetMouseButtonDown(0)) swapColorLeft();
+        if(Input.GetMouseButtonDown(1)) swapColorRight();
     }
 
     void Update()
@@ -52,6 +60,8 @@ public class CatcherController : MonoBehaviour
         if (col.gameObject.CompareTag(color))
         {
             Destroy(col.gameObject);
+            scoreController.scoreVal += 1;
+            scoreController.scoreText = "Score: " + scoreController.scoreVal.ToString();
         } 
     }
 
@@ -60,10 +70,12 @@ public class CatcherController : MonoBehaviour
         if (col.gameObject.CompareTag(color))
         {
             Destroy(col.gameObject);
+            scoreController.scoreVal += 1;
+            scoreController.scoreText = "Score: " + scoreController.scoreVal.ToString();
         } 
     }
 
-    void swapColor()
+    void swapColorLeft()
     {
         if (color == "Red")
         {
@@ -76,6 +88,25 @@ public class CatcherController : MonoBehaviour
             color = "Blue";
         }
         else if (color == "Blue")
+        {
+            floor.GetComponent<MeshRenderer>().material = red;
+            color = "Red";
+        }
+    }
+
+        void swapColorRight()
+    {
+        if (color == "Red")
+        {
+            floor.GetComponent<MeshRenderer>().material = blue;
+            color = "Blue";
+        }
+        else if (color == "Blue")
+        {
+            floor.GetComponent<MeshRenderer>().material = green;
+            color = "Green";
+        }
+        else if (color == "Green")
         {
             floor.GetComponent<MeshRenderer>().material = red;
             color = "Red";
