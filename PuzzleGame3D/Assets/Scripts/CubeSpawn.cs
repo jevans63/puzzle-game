@@ -19,5 +19,6 @@ public class CubeSpawn : MonoBehaviour
         int cubeIndex = Random.Range (0, cube.Length);
         int spawnIndex = Random.Range (0, spawnPoint.Length);
         Instantiate(cube[cubeIndex], spawnPoint[spawnIndex].position, spawnPoint[spawnIndex].rotation);
+        timeBetween += 0.01f;
     }
 }
