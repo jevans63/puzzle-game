@@ -8,6 +8,6 @@ public class DestroyOnCollisionLimit : MonoBehaviour
     void OnCollisionEnter(Collision col)
     {
         Destroy(col.gameObject);
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("MainMenu");
     }
 }
