@@ -12,4 +12,12 @@ public class MainMenu : MonoBehaviour
     {
         Application.Quit();
     }
+    public void HowToPlayButton()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("HowToPlay");
+    }
+    public void GoBackButton()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("MainMenu");
+    }
 }
