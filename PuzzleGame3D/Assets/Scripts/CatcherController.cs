@@ -8,7 +8,11 @@ public class CatcherController : MonoBehaviour
     public GameObject floor;
     public string color = "Blue";
     public ScoreController scoreController;
-
+    public AudioClip hit1;
+    public AudioClip clear1;
+    public AudioClip clear2;
+    public AudioClip clear3;
+    public AudioSource Source;
     //bool swapable = true; 
 
     // void OnMouseDown()
@@ -62,16 +66,23 @@ public class CatcherController : MonoBehaviour
             Destroy(col.gameObject);
             scoreController.scoreVal += 1;
             scoreController.scoreText = "Score: " + scoreController.scoreVal.ToString();
+            if(color == "Red") Source.PlayOneShot(clear1, 0.2f);
+            if(color == "Green") Source.PlayOneShot(clear2, 0.2f);
+            if(color == "Blue") Source.PlayOneShot(clear3, 0.2f);
         } 
     }
 
     void OnCollisionEnter(Collision col)
     {
+        Source.PlayOneShot(hit1, 0.2f);
         if (col.gameObject.CompareTag(color))
         {
             Destroy(col.gameObject);
             scoreController.scoreVal += 1;
             scoreController.scoreText = "Score: " + scoreController.scoreVal.ToString();
+            if(color == "Red") Source.PlayOneShot(clear1, 0.2f);
+            if(color == "Green") Source.PlayOneShot(clear2, 0.2f);
+            if(color == "Blue") Source.PlayOneShot(clear3, 0.2f);
         } 
     }
 

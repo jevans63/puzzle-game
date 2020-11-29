@@ -5,9 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class DestroyOnCollisionLimit : MonoBehaviour
 {        
+    public AudioClip gameover;
+    public AudioSource Source;
     public GameObject gameOverText;
     void OnCollisionEnter(Collision col)
     {
+        Source.PlayOneShot(gameover, 0.2f);
         Destroy(col.gameObject);
         StartCoroutine(GameOver(3));
     }
