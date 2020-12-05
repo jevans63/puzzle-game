@@ -12,7 +12,7 @@ public class DestroyOnCollisionLimit : MonoBehaviour
     {
         Source.PlayOneShot(gameover, 0.2f);
         Destroy(col.gameObject);
-        StartCoroutine(GameOver(3));
+        StartCoroutine(GameOver(2));
     }
 
     IEnumerator GameOver(float time)

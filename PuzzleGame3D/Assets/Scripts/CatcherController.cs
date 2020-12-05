@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 public class CatcherController : MonoBehaviour
 {
     public Material red, green, blue;
@@ -12,6 +13,8 @@ public class CatcherController : MonoBehaviour
     public AudioClip clear1;
     public AudioClip clear2;
     public AudioClip clear3;
+    public AudioClip gameover;
+    public GameObject gameOverText;
     public AudioSource Source;
     //bool swapable = true; 
 
@@ -61,6 +64,12 @@ public class CatcherController : MonoBehaviour
 
     void OnCollisionStay(Collision col)
     {
+        if (col.gameObject.tag == "Bomb")
+        {
+            Source.PlayOneShot(gameover, 0.2f);
+            Destroy(col.gameObject);
+            StartCoroutine(GameOver(2));
+        }
         if (col.gameObject.CompareTag(color))
         {
             Destroy(col.gameObject);
@@ -74,6 +83,12 @@ public class CatcherController : MonoBehaviour
 
     void OnCollisionEnter(Collision col)
     {
+        if (col.gameObject.tag == "Bomb")
+        {
+            Source.PlayOneShot(gameover, 0.2f);
+            Destroy(col.gameObject);
+            StartCoroutine(GameOver(2));
+        }
         Source.PlayOneShot(hit1, 0.2f);
         if (col.gameObject.CompareTag(color))
         {
@@ -122,6 +137,13 @@ public class CatcherController : MonoBehaviour
             floor.GetComponent<MeshRenderer>().material = red;
             color = "Red";
         }
+    }
+
+    IEnumerator GameOver(float time)
+    {
+        gameOverText.SetActive(true);
+        yield return new WaitForSeconds(time);
+        SceneManager.LoadScene("MainMenu");
     }
 
     // IEnumerator DelaySwapable(float time)

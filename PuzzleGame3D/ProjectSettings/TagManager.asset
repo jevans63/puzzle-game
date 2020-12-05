@@ -15,6 +15,7 @@ TagManager:
   - Red Dark
   - Green Dark
   - Blue Dark
+  - Bomb
   layers:
   - Default
   - TransparentFX

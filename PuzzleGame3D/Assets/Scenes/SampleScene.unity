@@ -5294,6 +5294,8 @@ MonoBehaviour:
   clear1: {fileID: 8300000, guid: e559da755bb93a94fb976d6e53b4a705, type: 3}
   clear2: {fileID: 8300000, guid: 3f7774fa77ce69e42aaf69bed2d25a84, type: 3}
   clear3: {fileID: 8300000, guid: 74b141db3c1f6254fa7142b1c5722bc3, type: 3}
+  gameover: {fileID: 8300000, guid: 8ca0f5a03ad9164498e8078fadd0e1f2, type: 3}
+  gameOverText: {fileID: 420361865}
   Source: {fileID: 1732521624}
 --- !u!54 &159087094
 Rigidbody:
@@ -5769,6 +5771,8 @@ MonoBehaviour:
   clear1: {fileID: 8300000, guid: e559da755bb93a94fb976d6e53b4a705, type: 3}
   clear2: {fileID: 8300000, guid: 3f7774fa77ce69e42aaf69bed2d25a84, type: 3}
   clear3: {fileID: 8300000, guid: 74b141db3c1f6254fa7142b1c5722bc3, type: 3}
+  gameover: {fileID: 8300000, guid: 8ca0f5a03ad9164498e8078fadd0e1f2, type: 3}
+  gameOverText: {fileID: 420361865}
   Source: {fileID: 1732521624}
 --- !u!54 &330053924
 Rigidbody:
@@ -6059,6 +6063,8 @@ MonoBehaviour:
   clear1: {fileID: 8300000, guid: e559da755bb93a94fb976d6e53b4a705, type: 3}
   clear2: {fileID: 8300000, guid: 3f7774fa77ce69e42aaf69bed2d25a84, type: 3}
   clear3: {fileID: 8300000, guid: 74b141db3c1f6254fa7142b1c5722bc3, type: 3}
+  gameover: {fileID: 8300000, guid: 8ca0f5a03ad9164498e8078fadd0e1f2, type: 3}
+  gameOverText: {fileID: 420361865}
   Source: {fileID: 1732521624}
 --- !u!54 &482861537
 Rigidbody:
@@ -6322,6 +6328,8 @@ MonoBehaviour:
   clear1: {fileID: 8300000, guid: e559da755bb93a94fb976d6e53b4a705, type: 3}
   clear2: {fileID: 8300000, guid: 3f7774fa77ce69e42aaf69bed2d25a84, type: 3}
   clear3: {fileID: 8300000, guid: 74b141db3c1f6254fa7142b1c5722bc3, type: 3}
+  gameover: {fileID: 8300000, guid: 8ca0f5a03ad9164498e8078fadd0e1f2, type: 3}
+  gameOverText: {fileID: 420361865}
   Source: {fileID: 1732521624}
 --- !u!54 &599880982
 Rigidbody:
@@ -6549,6 +6557,8 @@ MonoBehaviour:
   clear1: {fileID: 8300000, guid: e559da755bb93a94fb976d6e53b4a705, type: 3}
   clear2: {fileID: 8300000, guid: 3f7774fa77ce69e42aaf69bed2d25a84, type: 3}
   clear3: {fileID: 8300000, guid: 74b141db3c1f6254fa7142b1c5722bc3, type: 3}
+  gameover: {fileID: 8300000, guid: 8ca0f5a03ad9164498e8078fadd0e1f2, type: 3}
+  gameOverText: {fileID: 420361865}
   Source: {fileID: 1732521624}
 --- !u!54 &667581514
 Rigidbody:
@@ -17698,6 +17708,13 @@ MonoBehaviour:
   - {fileID: 4050670301940473976, guid: 5b8f08ac66f9b1e4fa30fc11d7d3ac95, type: 3}
   - {fileID: 4050670301940473976, guid: 1e6a531237715244a9037bfff195589c, type: 3}
   - {fileID: 4050670301940473976, guid: 56a71998b3d990b49a100c5cee7a82e4, type: 3}
+  - {fileID: 4050670301940473976, guid: 5b8f08ac66f9b1e4fa30fc11d7d3ac95, type: 3}
+  - {fileID: 4050670301940473976, guid: 1e6a531237715244a9037bfff195589c, type: 3}
+  - {fileID: 4050670301940473976, guid: 56a71998b3d990b49a100c5cee7a82e4, type: 3}
+  - {fileID: 4050670301940473976, guid: 5b8f08ac66f9b1e4fa30fc11d7d3ac95, type: 3}
+  - {fileID: 4050670301940473976, guid: 1e6a531237715244a9037bfff195589c, type: 3}
+  - {fileID: 4050670301940473976, guid: 56a71998b3d990b49a100c5cee7a82e4, type: 3}
+  - {fileID: 4050670301940473976, guid: b5d300d7a41d9b8498c783a3e0fab6b6, type: 3}
   spawnPoint:
   - {fileID: 1153757938}
   - {fileID: 1191862209}
@@ -17755,6 +17772,8 @@ MonoBehaviour:
   clear1: {fileID: 8300000, guid: e559da755bb93a94fb976d6e53b4a705, type: 3}
   clear2: {fileID: 8300000, guid: 3f7774fa77ce69e42aaf69bed2d25a84, type: 3}
   clear3: {fileID: 8300000, guid: 74b141db3c1f6254fa7142b1c5722bc3, type: 3}
+  gameover: {fileID: 8300000, guid: 8ca0f5a03ad9164498e8078fadd0e1f2, type: 3}
+  gameOverText: {fileID: 420361865}
   Source: {fileID: 1732521624}
 --- !u!65 &1347352502
 BoxCollider:
@@ -28095,6 +28114,8 @@ MonoBehaviour:
   clear1: {fileID: 8300000, guid: e559da755bb93a94fb976d6e53b4a705, type: 3}
   clear2: {fileID: 8300000, guid: 3f7774fa77ce69e42aaf69bed2d25a84, type: 3}
   clear3: {fileID: 8300000, guid: 74b141db3c1f6254fa7142b1c5722bc3, type: 3}
+  gameover: {fileID: 8300000, guid: 8ca0f5a03ad9164498e8078fadd0e1f2, type: 3}
+  gameOverText: {fileID: 420361865}
   Source: {fileID: 1732521624}
 --- !u!54 &1721320566
 Rigidbody:
@@ -28361,6 +28382,8 @@ MonoBehaviour:
   clear1: {fileID: 8300000, guid: e559da755bb93a94fb976d6e53b4a705, type: 3}
   clear2: {fileID: 8300000, guid: 3f7774fa77ce69e42aaf69bed2d25a84, type: 3}
   clear3: {fileID: 8300000, guid: 74b141db3c1f6254fa7142b1c5722bc3, type: 3}
+  gameover: {fileID: 8300000, guid: 8ca0f5a03ad9164498e8078fadd0e1f2, type: 3}
+  gameOverText: {fileID: 420361865}
   Source: {fileID: 1732521624}
 --- !u!54 &1810840990
 Rigidbody:
@@ -28684,6 +28707,8 @@ MonoBehaviour:
   clear1: {fileID: 8300000, guid: e559da755bb93a94fb976d6e53b4a705, type: 3}
   clear2: {fileID: 8300000, guid: 3f7774fa77ce69e42aaf69bed2d25a84, type: 3}
   clear3: {fileID: 8300000, guid: 74b141db3c1f6254fa7142b1c5722bc3, type: 3}
+  gameover: {fileID: 8300000, guid: 8ca0f5a03ad9164498e8078fadd0e1f2, type: 3}
+  gameOverText: {fileID: 420361865}
   Source: {fileID: 1732521624}
 --- !u!65 &2020881363
 BoxCollider:
@@ -33572,6 +33597,8 @@ MonoBehaviour:
   clear1: {fileID: 8300000, guid: e559da755bb93a94fb976d6e53b4a705, type: 3}
   clear2: {fileID: 8300000, guid: 3f7774fa77ce69e42aaf69bed2d25a84, type: 3}
   clear3: {fileID: 8300000, guid: 74b141db3c1f6254fa7142b1c5722bc3, type: 3}
+  gameover: {fileID: 8300000, guid: 8ca0f5a03ad9164498e8078fadd0e1f2, type: 3}
+  gameOverText: {fileID: 420361865}
   Source: {fileID: 1732521624}
 --- !u!65 &2080627988
 BoxCollider:
@@ -33706,6 +33733,8 @@ MonoBehaviour:
   clear1: {fileID: 8300000, guid: e559da755bb93a94fb976d6e53b4a705, type: 3}
   clear2: {fileID: 8300000, guid: 3f7774fa77ce69e42aaf69bed2d25a84, type: 3}
   clear3: {fileID: 8300000, guid: 74b141db3c1f6254fa7142b1c5722bc3, type: 3}
+  gameover: {fileID: 8300000, guid: 8ca0f5a03ad9164498e8078fadd0e1f2, type: 3}
+  gameOverText: {fileID: 420361865}
   Source: {fileID: 1732521624}
 --- !u!65 &2137035108
 BoxCollider:
