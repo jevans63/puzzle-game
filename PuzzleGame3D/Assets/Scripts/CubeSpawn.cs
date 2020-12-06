@@ -2,6 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// This script is what spawns the falling blocks
+// At start a function is called by InvokeRepeating called “SpawnInitial”
+// For 30 seconds, SpawnInital spawns up to three random blocks(except the Orange bomb block) 
+// to up to three random columns
+// A StartCoroutine() function calls a method named BombPhase() 
+// and passes a parameter for the amount of seconds to wait
+// After the given seconds have passed, the BombPhase()ends the SpawnInital() 
+// process via CancelInvoke() and calls InvokeRepeating() on the “Spawn” function 
+// The “Spawn” function is almost identical to “SpawnInitial”
+// except that it includes the Orange bomb blocks in the array of blocks which can spawn, 
+// albeit at a reduced probability
 public class CubeSpawn : MonoBehaviour
 {
     public GameObject[] cube;
@@ -12,9 +23,9 @@ public class CubeSpawn : MonoBehaviour
     void Start()
     {
         InvokeRepeating ("SpawnInitial", timeToBegin, timeBetween);
-        StartCoroutine(BombPhase(15));
+        StartCoroutine(BombPhase(30));
     }
-        void SpawnInitial()
+    void SpawnInitial()
     {
         int cubeIndex = Random.Range (0, cube.Length-1);
         int cubeIndex2 = Random.Range (0, cube.Length-1);
@@ -66,6 +77,7 @@ public class CubeSpawn : MonoBehaviour
     IEnumerator BombPhase(int time)
     {
         yield return new WaitForSeconds(time);
+        CancelInvoke("SpawnInitial"); 
         InvokeRepeating ("Spawn", timeToBegin, timeBetween);
     }
 }

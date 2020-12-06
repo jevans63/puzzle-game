@@ -3,6 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+
+// This script  controls the bottom row of blocks whose colors will destroy the falling blocks if they are matching
+// This is accomplished by using OnCollisonEnter() and OnCollisionStay() functions
+// The color/symbol swapping makes use of OnMouseOver() as well as Input.GetMouseDown()
+// The material and color variables are then changed depending on right or left clicking on the block
 public class CatcherController : MonoBehaviour
 {
     public Material red, green, blue;
@@ -16,50 +21,11 @@ public class CatcherController : MonoBehaviour
     public AudioClip gameover;
     public GameObject gameOverText;
     public AudioSource Source;
-    //bool swapable = true; 
-
-    // void OnMouseDown()
-    // {
-    //     swapColorLeft();
-    // }
 
     void OnMouseOver()
     {
         if(Input.GetMouseButtonDown(0)) swapColorLeft();
         if(Input.GetMouseButtonDown(1)) swapColorRight();
-    }
-
-    void Update()
-    {
-        // if (Input.GetKeyDown("z") && floor.gameObject.CompareTag("Block1") && swapable == true)
-        // {
-        //     swapColor();
-        //     //StartCoroutine(DelaySwapable(1));
-        // }
-
-        // if (Input.GetKeyDown("x") && floor.gameObject.CompareTag("Block2") && swapable == true)
-        // {
-        //     swapColor();
-        //     //StartCoroutine(DelaySwapable(1));
-        // }
-
-        // if (Input.GetKeyDown("c") && floor.gameObject.CompareTag("Block3") && swapable == true)
-        // {
-        //     swapColor();
-        //     //StartCoroutine(DelaySwapable(1));
-        // }
-
-        // if (Input.GetKeyDown("v") && floor.gameObject.CompareTag("Block4") && swapable == true)
-        // {
-        //     swapColor();
-        //     //StartCoroutine(DelaySwapable(1));
-        // }
-
-        // if (Input.GetKeyDown("b") && floor.gameObject.CompareTag("Block5") && swapable == true)
-        // {
-        //     swapColor();
-        //     //StartCoroutine(DelaySwapable(1));
-        // }
     }
 
     void OnCollisionStay(Collision col)
@@ -120,7 +86,7 @@ public class CatcherController : MonoBehaviour
         }
     }
 
-        void swapColorRight()
+    void swapColorRight()
     {
         if (color == "Red")
         {
@@ -145,11 +111,4 @@ public class CatcherController : MonoBehaviour
         yield return new WaitForSeconds(time);
         SceneManager.LoadScene("MainMenu");
     }
-
-    // IEnumerator DelaySwapable(float time)
-    // {
-    //     swapable = false;
-    //     yield return new WaitForSeconds(time);
-    //     swapable = true;
-    // }
 }
