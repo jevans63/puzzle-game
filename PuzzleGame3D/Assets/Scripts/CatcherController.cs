@@ -41,9 +41,9 @@ public class CatcherController : MonoBehaviour
             Destroy(col.gameObject);
             scoreController.scoreVal += 1;
             scoreController.scoreText = "Score: " + scoreController.scoreVal.ToString();
-            if(color == "Red") Source.PlayOneShot(clear1, 0.2f);
-            if(color == "Green") Source.PlayOneShot(clear2, 0.2f);
-            if(color == "Blue") Source.PlayOneShot(clear3, 0.2f);
+            if(color == "Red") Source.PlayOneShot(clear1, 0.15f);
+            if(color == "Green") Source.PlayOneShot(clear2, 0.15f);
+            if(color == "Blue") Source.PlayOneShot(clear3, 0.15f);
         } 
     }
 
@@ -61,9 +61,9 @@ public class CatcherController : MonoBehaviour
             Destroy(col.gameObject);
             scoreController.scoreVal += 1;
             scoreController.scoreText = "Score: " + scoreController.scoreVal.ToString();
-            if(color == "Red") Source.PlayOneShot(clear1, 0.2f);
-            if(color == "Green") Source.PlayOneShot(clear2, 0.2f);
-            if(color == "Blue") Source.PlayOneShot(clear3, 0.2f);
+            if(color == "Red") Source.PlayOneShot(clear1, 0.15f);
+            if(color == "Green") Source.PlayOneShot(clear2, 0.15f);
+            if(color == "Blue") Source.PlayOneShot(clear3, 0.15f);
         } 
     }
 
