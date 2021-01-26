@@ -1,3 +1,2 @@
 # PuzzleGame
-A falling block puzzle game built with Unity.
-Copyright 2021 Joshua Evans
+A falling block puzzle game built while learning Unity game development.
